@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA API Site</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>NASA API Project</h1>
+    </header>
+    <main>
+      <section id="filters">
+        <h2>Filters</h2>
+        <form id="filter-form">
+          <label for="rover">Rover:</label>
+          <select id="rover" name="rover">
+            <option value="curiosity">Curiosity</option>
+            <option value="opportunity">Opportunity</option>
+            <option value="spirit">Spirit</option>
+          </select>
+          <label for="camera">Camera:</label>
+          <select id="camera" name="camera">
+            <option value="">All</option>
+            <option value="FHAZ">Front Hazard Avoidance Camera</option>
+            <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+            <option value="MAST">Mast Camera</option>
+            <option value="CHEMCAM">Chemistry and Camera Complex</option>
+            <option value="MAHLI">Mars Hand Lens Imager</option>
+            <option value="MARDI">Mars Descent Imager</option>
+            <option value="NAVCAM">Navigation Camera</option>
+          </select>
+          <label for="sol">Sol (Martian day):</label>
+          <input type="number" id="sol" name="sol" value="1000" />
+          <button type="submit">Apply Filters</button>
+        </form>
+      </section>
+      <section id="nasa-data">
+        <h2>NASA Data</h2>
+        <div id="data-container"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 NASA API Site</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

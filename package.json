@@ -1,0 +1,21 @@
+{
+  "name": "nasa-api-site",
+  "version": "1.0.0",
+  "description": "A simple website that uses the NASA API to display information.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "keywords": [
+    "NASA",
+    "API",
+    "JavaScript",
+    "vanilla"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
